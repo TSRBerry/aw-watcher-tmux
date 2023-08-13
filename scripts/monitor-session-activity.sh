@@ -15,7 +15,7 @@ HOST=$(get_tmux_option "@aw-watcher-tmux-host" "localhost")
 PORT=$(get_tmux_option "@aw-watcher-tmux-port" "5600")
 PULSETIME=$(get_tmux_option "@aw-watcher-tmux-pulsetime" "120.0")
 
-BUCKET_ID="aw-watcher-tmux"
+BUCKET_ID="aw-watcher-tmux_$(hostname)"
 API_URL="http://$HOST:$PORT/api"
 
 ######
